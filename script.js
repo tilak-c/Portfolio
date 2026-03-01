@@ -11,7 +11,6 @@ const revealObserver = new IntersectionObserver(
   { threshold: 0.15 }
 );
 revealElements.forEach((el) => revealObserver.observe(el));
-// ===== Navbar hide on scroll down, show on scroll up =====
 let lastScroll = 0;
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
@@ -23,7 +22,6 @@ window.addEventListener('scroll', () => {
   }
   lastScroll = currentScroll;
 });
-// ===== Mobile menu toggle (simple) =====
 const mobileToggle = document.getElementById('mobile-toggle');
 const navLinks = document.querySelector('.nav-links');
 if (mobileToggle) {
@@ -41,7 +39,6 @@ if (mobileToggle) {
       navLinks.style.background = 'hsl(220, 20%, 6%)';
       navLinks.style.padding = '1rem 1.5rem';
       navLinks.style.borderBottom = '1px solid hsl(220, 14%, 18%)';
-      // Show all links on mobile when open
       navLinks.querySelectorAll('a').forEach((a) => {
         a.style.display = 'block';
         a.style.padding = '0.5rem 0';
@@ -49,14 +46,12 @@ if (mobileToggle) {
     }
   });
 }
-// ===== Smooth scroll for nav links =====
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', (e) => {
     const target = document.querySelector(anchor.getAttribute('href'));
     if (target) {
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth' });
-      // Close mobile menu if open
       if (window.innerWidth <= 640) {
         navLinks.style.display = '';
       }

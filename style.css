@@ -40,14 +40,12 @@ strong { color: var(--fg); font-weight: 600; }
   margin: 0 auto;
   padding: 0 1.5rem;
 }
-/* ===== TEXT GRADIENT ===== */
 .text-gradient {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-/* ===== NAVBAR ===== */
 .navbar {
   position: fixed;
   top: 0;
@@ -111,7 +109,6 @@ strong { color: var(--fg); font-weight: 600; }
   border-radius: 2px;
   transition: 0.3s;
 }
-/* ===== HERO ===== */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -207,7 +204,6 @@ a.meta-item:hover { color: var(--primary); }
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(6px); }
 }
-/* ===== TAG ===== */
 .tag {
   font-family: var(--font-mono);
   font-size: 0.8rem;
@@ -215,7 +211,6 @@ a.meta-item:hover { color: var(--primary); }
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
-/* ===== SECTIONS ===== */
 .section {
   padding: 6rem 0;
 }
@@ -224,7 +219,6 @@ a.meta-item:hover { color: var(--primary); }
   font-weight: 700;
   margin: 0.5rem 0 3rem;
 }
-/* ===== CARDS ===== */
 .card {
   background: linear-gradient(145deg, hsl(220, 18%, 12%), hsl(220, 18%, 8%));
   border: 1px solid hsla(38, 92%, 55%, 0.12);
@@ -293,7 +287,6 @@ a.meta-item:hover { color: var(--primary); }
   flex-shrink: 0;
   margin-top: 2px;
 }
-/* ===== SKILLS ===== */
 .skills-grid {
   display: flex;
   flex-direction: column;
@@ -327,7 +320,6 @@ a.meta-item:hover { color: var(--primary); }
   border-color: hsla(38, 92%, 55%, 0.4);
   color: var(--primary);
 }
-/* ===== PROJECTS ===== */
 .projects-grid {
   display: flex;
   flex-direction: column;
@@ -389,7 +381,6 @@ a.meta-item:hover { color: var(--primary); }
   background: var(--muted);
   color: var(--muted-fg);
 }
-/* ===== EDUCATION ===== */
 .edu-grid {
   display: flex;
   flex-direction: column;
@@ -421,7 +412,6 @@ a.meta-item:hover { color: var(--primary); }
   margin-top: 0.25rem;
   line-height: 1.5;
 }
-/* ===== FOOTER ===== */
 .footer {
   padding: 3rem 0;
   border-top: 1px solid var(--border);
@@ -430,7 +420,6 @@ a.meta-item:hover { color: var(--primary); }
   font-size: 0.85rem;
   color: var(--muted-fg);
 }
-/* ===== REVEAL ANIMATION ===== */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -451,7 +440,6 @@ a.meta-item:hover { color: var(--primary); }
     transform: translateY(0);
   }
 }
-/* ===== MOBILE ===== */
 @media (max-width: 640px) {
   .nav-links a:not(.nav-cta) { display: none; }
   .mobile-toggle { display: flex; }
