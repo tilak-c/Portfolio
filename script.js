@@ -86,7 +86,6 @@ window.addEventListener('scroll', () => {
 // Typing effect for hero section
 const typingText = [
   'Full Stack Developer',
-  'MERN Stack Engineer',
   'NestJS Backend Developer',
   'React Frontend Developer'
 ];
