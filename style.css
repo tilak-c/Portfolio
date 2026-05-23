@@ -449,3 +449,43 @@ a.meta-item:hover { color: var(--primary); }
   .card-top-row { flex-direction: column; }
   .section-title { font-size: 1.6rem; }
 }
+
+/* Active nav link */
+.active-link {
+  color: var(--primary) !important;
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  z-index: 9999;
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--primary-dark)
+  );
+  transition: width 0.1s linear;
+}
+
+/* Smooth card hover */
+.card {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Typing cursor */
+.tag::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

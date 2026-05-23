@@ -58,3 +58,122 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+// Active navbar section highlighting
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 120;
+    const sectionHeight = section.clientHeight;
+
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navItems.forEach((link) => {
+    link.classList.remove('active-link');
+
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active-link');
+    }
+  });
+});
+
+// Typing effect for hero section
+const typingText = [
+  'Full Stack Developer',
+  'MERN Stack Engineer',
+  'NestJS Backend Developer',
+  'React Frontend Developer'
+];
+
+const tagElement = document.querySelector('.tag');
+
+if (tagElement) {
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeEffect() {
+    const currentText = typingText[textIndex];
+
+    if (!isDeleting) {
+      tagElement.textContent = currentText.substring(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === currentText.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1200);
+        return;
+      }
+    } else {
+      tagElement.textContent = currentText.substring(0, charIndex - 1);
+      charIndex--;
+
+      if (charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % typingText.length;
+      }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 40 : 90);
+  }
+
+  typeEffect();
+}
+
+// Scroll progress indicator
+const progressBar = document.createElement('div');
+progressBar.classList.add('scroll-progress');
+document.body.appendChild(progressBar);
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight =
+    document.documentElement.scrollHeight - window.innerHeight;
+
+  const progress = (scrollTop / docHeight) * 100;
+
+  progressBar.style.width = `${progress}%`;
+});
+
+// Dynamic footer year
+const footerText = document.querySelector('.footer p');
+
+if (footerText) {
+  const year = new Date().getFullYear();
+
+  footerText.innerHTML = `
+    Built with <span class="text-gradient">♥</span> by Tilakavati Adhireddy © ${year}
+  `;
+}
+
+// Card hover tilt effect
+const cards = document.querySelectorAll('.card');
+
+cards.forEach((card) => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const rotateX = ((y / rect.height) - 0.5) * -6;
+    const rotateY = ((x / rect.width) - 0.5) * 6;
+
+    card.style.transform = `
+      perspective(1000px)
+      rotateX(${rotateX}deg)
+      rotateY(${rotateY}deg)
+      translateY(-4px)
+    `;
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'translateY(0)';
+  });
+});
