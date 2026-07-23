@@ -1378,6 +1378,16 @@ button:focus{
 
 }
 
+.nav-container{
+    width: min(1150px, 92%);
+    margin: 0 auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    height:75px;
+}
 /* ==========================================
    END OF FILE
 ========================================== */
