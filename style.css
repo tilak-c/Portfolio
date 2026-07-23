@@ -657,14 +657,13 @@ strong{
 }
 
 .card-list li{
-
     display:flex;
-
     align-items:flex-start;
-
-    gap:.8rem;
+    gap:12px;
 
     color:var(--text-light);
+
+    justify-content:flex-start; 
 
 }
 
