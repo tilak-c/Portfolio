@@ -12,7 +12,7 @@
           content="Tilakavati Adhireddy | Software QA Engineer Portfolio">
 
     <meta name="keywords"
-          content="QA Engineer, Software Tester, Playwright, Selenium, Automation Testing">
+          content="Software QA Engineer, Automation Tester, Playwright, Selenium, TestNG">
 
     <meta name="author"
           content="Tilakavati Adhireddy">
@@ -21,12 +21,24 @@
         Tilakavati Adhireddy | Software QA Engineer
     </title>
 
-    <!-- Google Icons -->
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
 
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- CSS -->
+    <!-- Stylesheet -->
 
     <link rel="stylesheet"
           href="style.css">
@@ -35,28 +47,27 @@
 
 <body>
 
-    <!-- =====================================
-            SCROLL PROGRESS BAR
-    ====================================== -->
+    <!-- Scroll Progress -->
 
     <div class="scroll-progress"></div>
 
-    <!-- =====================================
-                NAVBAR
-    ====================================== -->
+    <!-- ==========================
+            HEADER
+    =========================== -->
 
-    <header class="navbar">
+    <header class="header">
 
-        <div class="nav-container">
+        <div class="container navbar">
 
             <a href="#home"
-               class="nav-logo">
+               class="logo">
 
                 TA
 
             </a>
 
-            <nav class="nav-links">
+            <nav id="navMenu"
+                 class="nav-menu">
 
                 <a href="#about">
                     About
@@ -79,7 +90,7 @@
                 </a>
 
                 <a href="#contact"
-                   class="nav-cta">
+                   class="nav-button">
 
                     Contact
 
@@ -87,7 +98,9 @@
 
             </nav>
 
-            <button class="mobile-toggle">
+            <button id="menuButton"
+                    class="menu-button"
+                    aria-label="Open Navigation">
 
                 <span></span>
                 <span></span>
@@ -99,29 +112,32 @@
 
     </header>
 
-    <!-- =====================================
-                    HERO
-    ====================================== -->
+    <!-- ==========================
+            HERO
+    =========================== -->
 
     <section id="home"
              class="hero">
 
-        <div class="hero-glow"></div>
+        <div class="hero-blur hero-blur-left"></div>
 
-        <div class="container">
+        <div class="hero-blur hero-blur-right"></div>
 
-            <div class="hero-content fade-up">
+        <div class="container hero-container">
 
-                <span class="tag">
+            <div class="hero-content">
+
+                <p class="hero-tag">
 
                     SOFTWARE QA ENGINEER
 
-                </span>
+                </p>
 
                 <h1>
 
-                    Building Reliable Software Through
-                    <span class="text-gradient">
+                    Delivering Reliable Software Through
+
+                    <span>
 
                         Quality Engineering
 
@@ -129,60 +145,82 @@
 
                 </h1>
 
-                <p class="hero-desc">
+                <p class="hero-description">
 
-                    Software QA Engineer with <strong>2+ years of experience</strong>
-                    designing, automating, and executing test strategies for modern
-                    web applications. Experienced in Playwright, Selenium,
-                    TestNG, API Testing, SQL, CI/CD integration, and Agile
-                    development to deliver reliable, scalable, and high-quality
-                    software.
+                    Software QA Engineer with more than
+                    <strong>2 years of experience</strong>
+                    in manual and automation testing.
+
+                    Experienced in designing automation
+                    frameworks using
+                    <strong>Playwright</strong>,
+                    <strong>Selenium</strong>,
+                    <strong>TestNG</strong>,
+                    API testing with
+                    <strong>Postman</strong>,
+                    database validation using SQL,
+                    and ensuring high-quality software
+                    across Agile development cycles.
 
                 </p>
 
-                <div class="hero-meta">
+                <div class="hero-badges">
 
-                    <div class="meta-item">
+                    <div class="badge">
 
                         <i class="fa-solid fa-briefcase"></i>
 
-                        2+ Years Experience
+                        <span>
+
+                            2+ Years Experience
+
+                        </span>
 
                     </div>
 
-                    <div class="meta-item">
+                    <div class="badge">
 
-                        <i class="fa-solid fa-laptop-code"></i>
+                        <i class="fa-solid fa-robot"></i>
 
-                        Automation Testing
+                        <span>
 
-                    </div>
+                            Automation Testing
 
-                    <div class="meta-item">
-
-                        <i class="fa-solid fa-code-branch"></i>
-
-                        Playwright • Selenium
+                        </span>
 
                     </div>
 
-                    <div class="meta-item">
+                    <div class="badge">
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <span>
+
+                            Playwright & Selenium
+
+                        </span>
+
+                    </div>
+
+                    <div class="badge">
 
                         <i class="fa-solid fa-location-dot"></i>
 
-                        Hyderabad, India
+                        <span>
+
+                            Hyderabad, India
+
+                        </span>
 
                     </div>
 
                 </div>
 
-                <div class="hero-socials">
+                <div class="hero-buttons">
 
-                    <a href="YOUR_RESUME_LINK"
+                    <a href="assets/resume.pdf"
                        target="_blank"
-                       class="social-btn">
-
-                        <i class="fa-solid fa-file-arrow-down"></i>
+                       class="primary-btn">
 
                         Resume
 
@@ -190,9 +228,7 @@
 
                     <a href="https://github.com/tilak-c"
                        target="_blank"
-                       class="social-btn">
-
-                        <i class="fa-brands fa-github"></i>
+                       class="secondary-btn">
 
                         GitHub
 
@@ -200,20 +236,9 @@
 
                     <a href="https://www.linkedin.com/in/tilakavati-reddy-29t5/"
                        target="_blank"
-                       class="social-btn">
-
-                        <i class="fa-brands fa-linkedin"></i>
+                       class="secondary-btn">
 
                         LinkedIn
-
-                    </a>
-
-                    <a href="#contact"
-                       class="social-btn">
-
-                        <i class="fa-solid fa-envelope"></i>
-
-                        Contact
 
                     </a>
 
@@ -225,42 +250,40 @@
 
     </section>
 
-    <!-- =====================================
-        PART 2 STARTS HERE
-    ====================================== -->
-
-        <!-- =====================================
-                    ABOUT
-    ====================================== -->
+        <!-- ==========================
+            ABOUT
+    =========================== -->
 
     <section id="about"
              class="section">
 
         <div class="container">
 
-            <div class="section-header reveal">
+            <div class="section-heading">
 
-                <span class="tag">
+                <p class="section-tag">
 
-                    ABOUT ME
+                    ABOUT
 
-                </span>
+                </p>
 
                 <h2 class="section-title">
 
-                    Delivering Quality Through
-                    <span class="text-gradient">
-                        Automation
+                    Passionate About Building
+                    <span>
+
+                        High-Quality Software
+
                     </span>
 
                 </h2>
 
-                <p>
+                <p class="section-description">
 
-                    Passionate Software QA Engineer focused on building
-                    reliable automation frameworks, improving software quality,
-                    and ensuring exceptional user experiences through
-                    comprehensive testing strategies.
+                    I enjoy improving software quality through automation,
+                    reducing repetitive testing, identifying critical defects
+                    early, and collaborating with development teams to deliver
+                    reliable applications.
 
                 </p>
 
@@ -268,115 +291,138 @@
 
             <div class="about-grid">
 
-                <!-- Left -->
+                <!-- Left Side -->
 
-                <div class="about-card reveal">
+                <div class="about-content">
 
-                    <p>
+                    <div class="about-card">
 
-                        I am a <strong>Software QA Engineer</strong> with over
-                        <strong>2 years of experience</strong> in manual and
-                        automation testing of enterprise web applications.
+                        <h3>
 
-                    </p>
+                            Who I Am
 
-                    <p>
+                        </h3>
 
-                        My expertise includes designing scalable automation
-                        frameworks using <strong>Playwright</strong>,
-                        <strong>Selenium</strong>, and
-                        <strong>TestNG</strong>, while performing API,
-                        database, regression, integration, and end-to-end
-                        testing throughout Agile software development.
+                        <p>
 
-                    </p>
+                            I'm a Software QA Engineer with over
+                            <strong>2 years of experience</strong>
+                            in manual and automation testing of enterprise
+                            web applications.
 
-                    <p>
+                        </p>
 
-                        I enjoy improving release quality through automation,
-                        reducing repetitive testing efforts, identifying
-                        critical defects early, and collaborating closely with
-                        developers to deliver reliable software.
+                        <p>
 
-                    </p>
+                            I have experience designing and maintaining
+                            automation frameworks using
+                            <strong>Playwright</strong>,
+                            <strong>Selenium</strong>,
+                            and
+                            <strong>TestNG</strong>,
+                            while performing API testing,
+                            database validation,
+                            regression testing,
+                            exploratory testing,
+                            and end-to-end testing.
+
+                        </p>
+
+                        <p>
+
+                            My goal is to build reliable automation,
+                            improve release quality,
+                            and help teams ship software with confidence.
+
+                        </p>
+
+                    </div>
 
                     <div class="about-highlights">
 
-                        <div class="highlight-item">
+                        <div class="highlight-card">
 
-                            <div class="highlight-icon">
-                                <i class="fa-solid fa-robot"></i>
-                            </div>
+                            <i class="fa-solid fa-robot"></i>
 
                             <div>
 
                                 <h4>
+
                                     Automation Testing
+
                                 </h4>
 
-                                <span>
-                                    Playwright • Selenium
-                                </span>
+                                <p>
+
+                                    Playwright • Selenium • TestNG
+
+                                </p>
 
                             </div>
 
                         </div>
 
-                        <div class="highlight-item">
+                        <div class="highlight-card">
 
-                            <div class="highlight-icon">
-                                <i class="fa-solid fa-code"></i>
-                            </div>
+                            <i class="fa-solid fa-plug"></i>
 
                             <div>
 
                                 <h4>
+
                                     API Testing
+
                                 </h4>
 
-                                <span>
+                                <p>
+
                                     Postman
-                                </span>
+
+                                </p>
 
                             </div>
 
                         </div>
 
-                        <div class="highlight-item">
+                        <div class="highlight-card">
 
-                            <div class="highlight-icon">
-                                <i class="fa-solid fa-database"></i>
-                            </div>
+                            <i class="fa-solid fa-database"></i>
 
                             <div>
 
                                 <h4>
+
                                     Database Testing
+
                                 </h4>
 
-                                <span>
-                                    SQL
-                                </span>
+                                <p>
+
+                                    SQL • MySQL • PostgreSQL
+
+                                </p>
 
                             </div>
 
                         </div>
 
-                        <div class="highlight-item">
+                        <div class="highlight-card">
 
-                            <div class="highlight-icon">
-                                <i class="fa-solid fa-people-group"></i>
-                            </div>
+                            <i class="fa-solid fa-users"></i>
 
                             <div>
 
                                 <h4>
+
                                     Agile Development
+
                                 </h4>
 
-                                <span>
-                                    SDLC • STLC
-                                </span>
+                                <p>
+
+                                    SDLC • STLC • Scrum
+
+                                </p>
 
                             </div>
 
@@ -386,59 +432,75 @@
 
                 </div>
 
-                <!-- Right -->
+                <!-- Right Side -->
 
-                <div class="about-stats reveal">
+                <aside class="about-sidebar">
 
-                    <div class="stat-card">
+                    <div class="stat-box">
 
-                        <h2>
+                        <h3>
+
                             2+
-                        </h2>
+
+                        </h3>
 
                         <p>
-                            Years Experience
+
+                            Years of Experience
+
                         </p>
 
                     </div>
 
-                    <div class="stat-card">
+                    <div class="stat-box">
 
-                        <h2>
+                        <h3>
+
                             100+
-                        </h2>
+
+                        </h3>
 
                         <p>
+
                             Test Cases Managed
+
                         </p>
 
                     </div>
 
-                    <div class="stat-card">
+                    <div class="stat-box">
 
-                        <h2>
+                        <h3>
+
                             50+
-                        </h2>
+
+                        </h3>
 
                         <p>
-                            Critical Bugs Found
+
+                            Critical Defects Identified
+
                         </p>
 
                     </div>
 
-                    <div class="stat-card">
+                    <div class="stat-box">
 
-                        <h2>
+                        <h3>
+
                             35%
-                        </h2>
+
+                        </h3>
 
                         <p>
-                            Regression Time Reduced
+
+                            Reduction in Regression Testing Effort
+
                         </p>
 
                     </div>
 
-                </div>
+                </aside>
 
             </div>
 
@@ -446,351 +508,185 @@
 
     </section>
 
-    <!-- =====================================
-                    SKILLS
-    ====================================== -->
+        <!-- ==========================
+            SKILLS
+    =========================== -->
 
     <section id="skills"
              class="section">
 
         <div class="container">
 
-            <div class="section-header reveal">
+            <div class="section-heading">
 
-                <span class="tag">
+                <p class="section-tag">
 
                     SKILLS
 
-                </span>
+                </p>
 
                 <h2 class="section-title">
 
                     Technical
-                    <span class="text-gradient">
+                    <span>
+
                         Expertise
+
                     </span>
 
                 </h2>
 
-            </div>
+                <p class="section-description">
 
-            <div class="skills-grid">
-
-                <!-- Automation -->
-
-                <div class="skill-category reveal">
-
-                    <div class="skill-header">
-
-                        <div class="skill-icon">
-                            <i class="fa-solid fa-robot"></i>
-                        </div>
-
-                        <h3>
-
-                            Automation
-
-                        </h3>
-
-                    </div>
-
-                    <div class="skill-tags">
-
-                        <span>Playwright</span>
-                        <span>Selenium</span>
-                        <span>TestNG</span>
-                        <span>Cucumber</span>
-                        <span>BDD</span>
-                        <span>TDD</span>
-                        <span>Page Object Model</span>
-
-                    </div>
-
-                </div>
-
-                <!-- Programming -->
-
-                <div class="skill-category reveal">
-
-                    <div class="skill-header">
-
-                        <div class="skill-icon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-
-                        <h3>
-
-                            Programming
-
-                        </h3>
-
-                    </div>
-
-                    <div class="skill-tags">
-
-                        <span>JavaScript</span>
-                        <span>TypeScript</span>
-                        <span>SQL</span>
-
-                    </div>
-
-                </div>
-
-                <!-- Testing -->
-
-                <div class="skill-category reveal">
-
-                    <div class="skill-header">
-
-                        <div class="skill-icon">
-                            <i class="fa-solid fa-vial"></i>
-                        </div>
-
-                        <h3>
-
-                            Testing
-
-                        </h3>
-
-                    </div>
-
-                    <div class="skill-tags">
-
-                        <span>Manual Testing</span>
-                        <span>Functional Testing</span>
-                        <span>Regression Testing</span>
-                        <span>Smoke Testing</span>
-                        <span>Sanity Testing</span>
-                        <span>Integration Testing</span>
-                        <span>API Testing</span>
-                        <span>Database Testing</span>
-                        <span>End-to-End Testing</span>
-                        <span>Exploratory Testing</span>
-
-                    </div>
-
-                </div>
-
-                <!-- Tools -->
-
-                <div class="skill-category reveal">
-
-                    <div class="skill-header">
-
-                        <div class="skill-icon">
-                            <i class="fa-solid fa-screwdriver-wrench"></i>
-                        </div>
-
-                        <h3>
-
-                            Tools
-
-                        </h3>
-
-                    </div>
-
-                    <div class="skill-tags">
-
-                        <span>Postman</span>
-                        <span>MySQL</span>
-                        <span>PostgreSQL</span>
-                        <span>Git</span>
-                        <span>Docker</span>
-                        <span>JIRA</span>
-                        <span>Zephyr</span>
-                        <span>TeamCity</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- =====================================
-            PART 3 STARTS HERE
-    ====================================== -->
-
-        <!-- =====================================
-                EXPERIENCE
-    ====================================== -->
-
-    <section id="experience"
-             class="section">
-
-        <div class="container">
-
-            <div class="section-header reveal">
-
-                <span class="tag">
-                    EXPERIENCE
-                </span>
-
-                <h2 class="section-title">
-
-                    Professional
-                    <span class="text-gradient">
-                        Experience
-                    </span>
-
-                </h2>
-
-                <p>
-
-                    Over two years of experience in manual and automation
-                    testing, building scalable automation frameworks,
-                    validating APIs, and ensuring high-quality software
-                    releases in Agile environments.
+                    My experience covers automation testing, manual testing,
+                    API validation, database testing, CI/CD integration,
+                    and Agile software development.
 
                 </p>
 
             </div>
 
-            <div class="experience-wrapper">
+            <div class="skills-grid">
 
-                <!-- ===========================
-                        S&P GLOBAL
-                ============================ -->
+                <!-- Automation Testing -->
 
-                <article class="experience-card reveal">
+                <article class="skill-card">
 
-                    <div class="card-header">
+                    <div class="skill-icon">
 
-                        <div class="card-icon">
-
-                            <i class="fa-solid fa-building"></i>
-
-                        </div>
-
-                        <div class="card-info">
-
-                            <div class="card-top-row">
-
-                                <div>
-
-                                    <h3>
-
-                                        S&amp;P Global
-
-                                    </h3>
-
-                                    <p class="card-role">
-
-                                        Associate Engineer
-
-                                    </p>
-
-                                </div>
-
-                                <span class="card-date">
-
-                                    Jul 2022 – Jul 2024
-
-                                </span>
-
-                            </div>
-
-                            <span class="company-tag">
-
-                                Financial Services
-
-                            </span>
-
-                        </div>
+                        <i class="fa-solid fa-robot"></i>
 
                     </div>
 
-                    <ul class="card-list">
+                    <h3>
 
-                        <li>
+                        Automation Testing
 
-                            Reduced manual regression testing effort by
-                            <strong>35%</strong> by designing and maintaining
-                            scalable automation frameworks using
-                            <strong>Playwright, Selenium, and TestNG.</strong>
+                    </h3>
 
-                        </li>
-
-                        <li>
-
-                            Developed reusable automation components using the
-                            <strong>Page Object Model (POM)</strong> approach,
-                            improving framework maintainability by
-                            <strong>40%</strong>.
-
-                        </li>
-
-                        <li>
-
-                            Automated end-to-end, functional, smoke,
-                            regression, and integration test scenarios for
-                            enterprise web applications.
-
-                        </li>
-
-                        <li>
-
-                            Performed API testing using
-                            <strong>Postman</strong> and validated backend
-                            data using
-                            <strong>SQL, MySQL, and PostgreSQL.</strong>
-
-                        </li>
-
-                        <li>
-
-                            Identified and reported
-                            <strong>50+ critical defects</strong> through
-                            exploratory, functional, and regression testing,
-                            improving overall release quality.
-
-                        </li>
-
-                        <li>
-
-                            Executed manual and automated test cases within
-                            Agile sprints while collaborating closely with
-                            developers, business analysts, and product owners.
-
-                        </li>
-
-                        <li>
-
-                            Managed more than
-                            <strong>100 test cases</strong> using
-                            <strong>JIRA</strong> and
-                            <strong>Zephyr</strong>, ensuring complete test
-                            coverage and defect traceability.
-
-                        </li>
-
-                        <li>
-
-                            Integrated automated test execution into
-                            <strong>TeamCity CI/CD</strong>, reducing release
-                            validation time by
-                            <strong>30%</strong>.
-
-                        </li>
-
-                    </ul>
-
-                    <div class="experience-tech">
+                    <div class="skill-tags">
 
                         <span>Playwright</span>
+
                         <span>Selenium</span>
+
                         <span>TestNG</span>
+
+                        <span>Cucumber</span>
+
+                        <span>BDD</span>
+
+                        <span>TDD</span>
+
+                        <span>Page Object Model</span>
+
+                    </div>
+
+                </article>
+
+                <!-- Testing -->
+
+                <article class="skill-card">
+
+                    <div class="skill-icon">
+
+                        <i class="fa-solid fa-vial-circle-check"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Testing
+
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>Manual Testing</span>
+
+                        <span>Functional Testing</span>
+
+                        <span>Regression Testing</span>
+
+                        <span>Smoke Testing</span>
+
+                        <span>Sanity Testing</span>
+
+                        <span>Integration Testing</span>
+
+                        <span>API Testing</span>
+
+                        <span>Database Testing</span>
+
+                        <span>End-to-End Testing</span>
+
+                        <span>Exploratory Testing</span>
+
+                    </div>
+
+                </article>
+
+                <!-- Programming -->
+
+                <article class="skill-card">
+
+                    <div class="skill-icon">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Programming
+
+                    </h3>
+
+                    <div class="skill-tags">
+
                         <span>JavaScript</span>
+
                         <span>TypeScript</span>
+
                         <span>SQL</span>
+
+                    </div>
+
+                </article>
+
+                <!-- Tools -->
+
+                <article class="skill-card">
+
+                    <div class="skill-icon">
+
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                    </div>
+
+                    <h3>
+
+                        Tools & Platforms
+
+                    </h3>
+
+                    <div class="skill-tags">
+
                         <span>Postman</span>
-                        <span>JIRA</span>
-                        <span>Zephyr</span>
-                        <span>TeamCity</span>
+
+                        <span>MySQL</span>
+
+                        <span>PostgreSQL</span>
+
                         <span>Git</span>
+
+                        <span>Docker</span>
+
+                        <span>TeamCity</span>
+
+                        <span>JIRA</span>
+
+                        <span>Zephyr</span>
 
                     </div>
 
@@ -802,31 +698,183 @@
 
     </section>
 
-    <!-- =====================================
-            PART 4 STARTS HERE
-    ====================================== -->
+        <!-- ==========================
+            EXPERIENCE
+    =========================== -->
 
-        <!-- =====================================
-                    PROJECTS
-    ====================================== -->
+    <section id="experience"
+             class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="section-tag">
+
+                    EXPERIENCE
+
+                </p>
+
+                <h2 class="section-title">
+
+                    Professional
+                    <span>
+
+                        Experience
+
+                    </span>
+
+                </h2>
+
+                <p class="section-description">
+
+                    My experience includes manual testing, automation framework
+                    development, API testing, database validation, and
+                    collaborating with Agile teams to deliver high-quality
+                    software.
+
+                </p>
+
+            </div>
+
+            <div class="timeline">
+
+                <!-- Experience Card -->
+
+                <article class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-header">
+
+                            <div>
+
+                                <h3>
+
+                                    Associate Engineer
+
+                                </h3>
+
+                                <h4>
+
+                                    S&P Global
+
+                                </h4>
+
+                            </div>
+
+                            <span class="experience-duration">
+
+                                Jul 2022 – Jul 2024
+
+                            </span>
+
+                        </div>
+
+                        <p class="experience-summary">
+
+                            Worked as a Software QA Engineer responsible for
+                            manual and automation testing of enterprise
+                            applications. Designed, executed, and maintained
+                            automation suites while collaborating with
+                            cross-functional Agile teams to improve software
+                            quality and release confidence.
+
+                        </p>
+
+                        <ul class="experience-list">
+
+                            <li>
+                                Designed and maintained automation test scripts
+                                using Playwright, Selenium, and TestNG.
+                            </li>
+
+                            <li>
+                                Performed functional, regression, smoke,
+                                sanity, integration, exploratory, API,
+                                database, and end-to-end testing.
+                            </li>
+
+                            <li>
+                                Created and executed comprehensive test cases,
+                                test scenarios, and defect reports.
+                            </li>
+
+                            <li>
+                                Validated REST APIs using Postman and verified
+                                backend data using SQL queries.
+                            </li>
+
+                            <li>
+                                Collaborated closely with developers, business
+                                analysts, and product owners in Agile sprints.
+                            </li>
+
+                            <li>
+                                Logged, tracked, and verified defects using
+                                JIRA and Zephyr throughout the software
+                                development lifecycle.
+                            </li>
+
+                            <li>
+                                Participated in sprint planning, daily standups,
+                                regression cycles, and release validation.
+                            </li>
+
+                        </ul>
+
+                        <div class="experience-tech">
+
+                            <span>Playwright</span>
+                            <span>Selenium</span>
+                            <span>TestNG</span>
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>SQL</span>
+                            <span>Postman</span>
+                            <span>MySQL</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                            <span>Git</span>
+                            <span>JIRA</span>
+                            <span>Zephyr</span>
+                            <span>TeamCity</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- ==========================
+            PROJECTS
+    =========================== -->
 
     <section id="projects"
              class="section">
 
         <div class="container">
 
-            <div class="section-header reveal">
+            <div class="section-heading">
 
-                <span class="tag">
+                <p class="section-tag">
 
                     PROJECTS
 
-                </span>
+                </p>
 
                 <h2 class="section-title">
 
                     Featured
-                    <span class="text-gradient">
+                    <span>
 
                         Projects
 
@@ -834,11 +882,11 @@
 
                 </h2>
 
-                <p>
+                <p class="section-description">
 
-                    A collection of projects demonstrating expertise in
-                    automation testing, full-stack development, REST APIs,
-                    database design, and modern web technologies.
+                    A selection of projects demonstrating my experience in
+                    automation testing, web application testing, and software
+                    quality assurance.
 
                 </p>
 
@@ -846,13 +894,19 @@
 
             <div class="projects-grid">
 
-                <!-- =====================================
-                        PUREBASKET
-                ====================================== -->
+                <!-- =====================
+                        PROJECT 1
+                ====================== -->
 
-                <article class="project-card reveal">
+                <article class="project-card">
 
-                    <div class="project-header">
+                    <div class="project-content">
+
+                        <span class="project-category">
+
+                            E-Commerce Platform
+
+                        </span>
 
                         <h3>
 
@@ -860,37 +914,33 @@
 
                         </h3>
 
-                        <p class="project-sub">
+                        <p class="project-description">
 
-                            Full Stack Grocery Platform
+                            A full-stack grocery shopping platform featuring
+                            secure authentication, product browsing, shopping
+                            cart management, and order processing. Focused on
+                            validating user workflows, API functionality,
+                            and database consistency.
 
                         </p>
 
-                    </div>
+                        <div class="project-tech">
 
-                    <p class="project-desc">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>REST API</span>
 
-                        Built a responsive MERN-based grocery shopping
-                        application featuring secure authentication,
-                        product browsing, shopping cart management,
-                        and order processing with a modern user interface.
-
-                    </p>
-
-                    <div class="tech-tags">
-
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>Express</span>
-                        <span>MongoDB</span>
-                        <span>JWT</span>
+                        </div>
 
                     </div>
 
-                    <div class="project-links">
+                    <div class="project-footer">
 
                         <a href="https://github.com/tilak-c"
-                           target="_blank">
+                           target="_blank"
+                           class="project-btn">
 
                             <i class="fa-brands fa-github"></i>
 
@@ -899,11 +949,12 @@
                         </a>
 
                         <a href="https://pure-basket-zeta.vercel.app/"
-                           target="_blank">
+                           target="_blank"
+                           class="project-btn primary">
 
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-                            Live
+                            Live Demo
 
                         </a>
 
@@ -911,13 +962,19 @@
 
                 </article>
 
-                <!-- =====================================
-                        ROOMEASE
-                ====================================== -->
+                <!-- =====================
+                        PROJECT 2
+                ====================== -->
 
-                <article class="project-card reveal">
+                <article class="project-card">
 
-                    <div class="project-header">
+                    <div class="project-content">
+
+                        <span class="project-category">
+
+                            Hotel Booking System
+
+                        </span>
 
                         <h3>
 
@@ -925,37 +982,32 @@
 
                         </h3>
 
-                        <p class="project-sub">
+                        <p class="project-description">
 
-                            Hotel Booking Platform
+                            A hotel booking application supporting room
+                            management, availability tracking, reservations,
+                            and booking validation. Tested booking workflows,
+                            business rules, and backend database operations.
 
                         </p>
 
-                    </div>
+                        <div class="project-tech">
 
-                    <p class="project-desc">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>REST API</span>
 
-                        Developed a hotel booking platform supporting
-                        room management, availability tracking,
-                        secure reservations, booking validation,
-                        pricing calculations, and responsive user
-                        experience using the MERN stack.
-
-                    </p>
-
-                    <div class="tech-tags">
-
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>Express</span>
-                        <span>MongoDB</span>
+                        </div>
 
                     </div>
 
-                    <div class="project-links">
+                    <div class="project-footer">
 
                         <a href="https://github.com/tilak-c"
-                           target="_blank">
+                           target="_blank"
+                           class="project-btn">
 
                             <i class="fa-brands fa-github"></i>
 
@@ -964,11 +1016,11 @@
                         </a>
 
                         <a href="#"
-                           target="_blank">
+                           class="project-btn primary">
 
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-                            Live
+                            Live Demo
 
                         </a>
 
@@ -976,13 +1028,19 @@
 
                 </article>
 
-                <!-- =====================================
-                        SERENAI
-                ====================================== -->
+                <!-- =====================
+                        PROJECT 3
+                ====================== -->
 
-                <article class="project-card reveal">
+                <article class="project-card">
 
-                    <div class="project-header">
+                    <div class="project-content">
+
+                        <span class="project-category">
+
+                            AI Mental Wellness
+
+                        </span>
 
                         <h3>
 
@@ -990,38 +1048,33 @@
 
                         </h3>
 
-                        <p class="project-sub">
+                        <p class="project-description">
 
-                            AI Mental Wellness Platform
+                            An AI-powered mental wellness application that
+                            analyzes journal entries, detects emotions,
+                            and provides thoughtful insights using modern
+                            AI models. Tested API integrations and end-to-end
+                            user journeys.
 
                         </p>
 
-                    </div>
+                        <div class="project-tech">
 
-                    <p class="project-desc">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>Gemini AI</span>
 
-                        Developed an AI-powered mental wellness platform
-                        capable of analyzing journal entries,
-                        detecting emotions, generating sentiment insights,
-                        and providing reflective feedback using
-                        modern AI technologies.
-
-                    </p>
-
-                    <div class="tech-tags">
-
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>Express</span>
-                        <span>MongoDB</span>
-                        <span>Gemini AI</span>
+                        </div>
 
                     </div>
 
-                    <div class="project-links">
+                    <div class="project-footer">
 
                         <a href="https://github.com/tilak-c"
-                           target="_blank">
+                           target="_blank"
+                           class="project-btn">
 
                             <i class="fa-brands fa-github"></i>
 
@@ -1030,11 +1083,11 @@
                         </a>
 
                         <a href="#"
-                           target="_blank">
+                           class="project-btn primary">
 
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-                            Live
+                            Live Demo
 
                         </a>
 
@@ -1048,30 +1101,27 @@
 
     </section>
 
-    <!-- =====================================
-            PART 5 STARTS HERE
-    ====================================== -->
-        <!-- =====================================
-                EDUCATION
-    ====================================== -->
+        <!-- ==========================
+            EDUCATION
+    =========================== -->
 
     <section id="education"
              class="section">
 
         <div class="container">
 
-            <div class="section-header reveal">
+            <div class="section-heading">
 
-                <span class="tag">
+                <p class="section-tag">
 
                     EDUCATION
 
-                </span>
+                </p>
 
                 <h2 class="section-title">
 
                     Academic
-                    <span class="text-gradient">
+                    <span>
 
                         Background
 
@@ -1081,17 +1131,11 @@
 
             </div>
 
-            <div class="edu-grid">
+            <div class="education-card">
 
-                <article class="edu-card reveal">
+                <div class="education-header">
 
-                    <div class="edu-icon">
-
-                        <i class="fa-solid fa-graduation-cap"></i>
-
-                    </div>
-
-                    <div class="edu-content">
+                    <div>
 
                         <h3>
 
@@ -1099,63 +1143,27 @@
 
                         </h3>
 
-                        <p class="edu-sub">
+                        <h4>
 
                             Information Technology
 
-                        </p>
-
-                        <p>
-
-                            Vasavi College of Engineering,
-                            Hyderabad
-
-                        </p>
-
-                        <span class="edu-year">
-
-                            2019 – 2023
-
-                        </span>
+                        </h4>
 
                     </div>
 
-                </article>
+                    <span class="education-year">
 
-                <article class="edu-card reveal">
+                        2018 – 2022
 
-                    <div class="edu-icon">
+                    </span>
 
-                        <i class="fa-solid fa-trophy"></i>
+                </div>
 
-                    </div>
+                <p>
 
-                    <div class="edu-content">
+                    Vasavi College of Engineering
 
-                        <h3>
-
-                            Achievement
-
-                        </h3>
-
-                        <p class="edu-sub">
-
-                            Data Structures & Algorithms
-
-                        </p>
-
-                        <p>
-
-                            Solved 500+ coding problems
-                            across various coding platforms,
-                            strengthening problem-solving
-                            and analytical skills.
-
-                        </p>
-
-                    </div>
-
-                </article>
+                </p>
 
             </div>
 
@@ -1163,68 +1171,97 @@
 
     </section>
 
-    <!-- =====================================
-                CONTACT
-    ====================================== -->
+    <!-- ==========================
+            CONTACT
+    =========================== -->
 
     <section id="contact"
              class="section">
 
         <div class="container">
 
-            <div class="contact-card reveal">
+            <div class="section-heading">
 
-                <span class="tag">
+                <p class="section-tag">
 
                     CONTACT
 
-                </span>
+                </p>
 
-                <h2>
+                <h2 class="section-title">
 
-                    Let's Build Reliable Software Together
+                    Let's
+                    <span>
+
+                        Connect
+
+                    </span>
 
                 </h2>
 
-                <p>
+                <p class="section-description">
 
-                    I'm currently open to Software QA Engineer,
-                    Automation Test Engineer, and Quality
-                    Assurance opportunities. If you're looking
-                    for someone passionate about delivering
-                    reliable software through automation and
-                    quality engineering, I'd love to connect.
+                    I'm open to Software QA Engineer and Automation Testing
+                    opportunities. Feel free to reach out if you'd like to
+                    discuss a role, collaboration, or just say hello.
 
                 </p>
 
-                <div class="contact-links">
+            </div>
 
-                    <a href="mailto:YOUR_EMAIL@gmail.com"
-                       class="contact-btn">
+            <div class="contact-grid">
 
-                        <i class="fa-solid fa-envelope"></i>
+                <div class="contact-card">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <h3>
 
                         Email
 
+                    </h3>
+
+                    <a href="mailto:yourmail@example.com">
+
+                        yourmail@example.com
+
                     </a>
 
-                    <a href="https://www.linkedin.com/in/tilakavati-reddy-29t5/"
-                       target="_blank"
-                       class="contact-btn">
+                </div>
 
-                        <i class="fa-brands fa-linkedin"></i>
+                <div class="contact-card">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    <h3>
 
                         LinkedIn
 
+                    </h3>
+
+                    <a href="https://www.linkedin.com/in/tilakavati-reddy-29t5/"
+                       target="_blank">
+
+                        View Profile
+
                     </a>
 
-                    <a href="https://github.com/tilak-c"
-                       target="_blank"
-                       class="contact-btn">
+                </div>
 
-                        <i class="fa-brands fa-github"></i>
+                <div class="contact-card">
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <h3>
 
                         GitHub
+
+                    </h3>
+
+                    <a href="https://github.com/tilak-c"
+                       target="_blank">
+
+                        github.com/tilak-c
 
                     </a>
 
@@ -1236,72 +1273,45 @@
 
     </section>
 
-    <!-- =====================================
-                FOOTER
-    ====================================== -->
+    <!-- ==========================
+            FOOTER
+    =========================== -->
 
     <footer class="footer">
 
-        <div class="container">
+        <div class="container footer-content">
 
-            <div class="footer-content">
+            <p>
 
-                <div>
+                © 2026 Tilakavati Adhireddy. All rights reserved.
 
-                    <h3 class="nav-logo">
+            </p>
 
-                        TA
+            <div class="footer-links">
 
-                    </h3>
+                <a href="#home">
 
-                    <p>
+                    Home
 
-                        © 2026 Tilakavati Adhireddy.
-                        All Rights Reserved.
+                </a>
 
-                    </p>
+                <a href="#about">
 
-                </div>
+                    About
 
-                <div class="footer-links">
+                </a>
 
-                    <a href="#home">
+                <a href="#projects">
 
-                        Home
+                    Projects
 
-                    </a>
+                </a>
 
-                    <a href="#about">
+                <a href="#contact">
 
-                        About
+                    Contact
 
-                    </a>
-
-                    <a href="#skills">
-
-                        Skills
-
-                    </a>
-
-                    <a href="#experience">
-
-                        Experience
-
-                    </a>
-
-                    <a href="#projects">
-
-                        Projects
-
-                    </a>
-
-                    <a href="#contact">
-
-                        Contact
-
-                    </a>
-
-                </div>
+                </a>
 
             </div>
 
@@ -1309,23 +1319,25 @@
 
     </footer>
 
-    <!-- =====================================
-            BACK TO TOP BUTTON
-    ====================================== -->
+    <!-- ==========================
+            BACK TO TOP
+    =========================== -->
 
-    <button class="back-to-top"
-            id="backToTop">
+    <button id="backToTop"
+            class="back-to-top"
+            aria-label="Back to Top">
 
         <i class="fa-solid fa-arrow-up"></i>
 
     </button>
 
-    <!-- =====================================
-                JAVASCRIPT
-    ====================================== -->
+    <!-- ==========================
+            SCRIPT
+    =========================== -->
 
     <script src="script.js"></script>
 
 </body>
 
 </html>
+
