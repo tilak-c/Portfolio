@@ -1,287 +1,1094 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tilakavati Adhireddy | Full Stack Developer</title>
-  <meta name="description" content="Jr Software Developer portfolio — Tilakavati Adhireddy" />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tilakavati Adhireddy | Software QA Engineer</title>
+
+    <meta
+        name="description"
+        content="Software QA Engineer with 2+ years of experience in Playwright, Selenium, TestNG, Automation Testing, API Testing, SQL, and CI/CD." />
+
+    <meta
+        name="keywords"
+        content="Software QA Engineer, Automation Tester, Playwright, Selenium, TestNG, Cucumber, TypeScript, JavaScript, Postman, SQL, TeamCity, JIRA, Zephyr, Hyderabad" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+        rel="icon"
+        href="https://cdn-icons-png.flaticon.com/512/2779/2779775.png" />
+
 </head>
+
 <body>
-  <nav class="navbar" id="navbar">
+
+<div class="scroll-progress"></div>
+
+<!-- ===========================
+        NAVBAR
+============================ -->
+
+<nav class="navbar" id="navbar">
+
     <div class="nav-container">
-      <a href="#" class="nav-logo">TA</a>
-      <div class="nav-links">
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="mailto:adhireddytilakavati@gmail.com" class="nav-cta">Contact</a>
-      </div>
-      <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+
+        <a href="#hero" class="nav-logo">
+            TA
+        </a>
+
+        <div class="nav-links">
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#experience">
+                Experience
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#education">
+                Education
+            </a>
+
+            <a
+                href="mailto:adhireddytilakavati@gmail.com"
+                class="nav-cta">
+
+                Contact
+
+            </a>
+
+        </div>
+
+        <button
+            class="mobile-toggle"
+            id="mobile-toggle">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
     </div>
-  </nav>
-  <section class="hero" id="hero">
+
+</nav>
+
+<!-- ===========================
+        HERO
+============================ -->
+
+<section class="hero" id="hero">
+
     <div class="hero-glow"></div>
+
     <div class="container hero-content fade-up">
-      <p class="tag">Full Stack Developer</p>
-      <h1>Tilakavati<br /><span class="text-gradient">Adhireddy</span></h1>
-     <p class="hero-desc">
-  Full-Stack Developer with experience building scalable mentoring and role-based
-  management systems using <strong>React</strong>, <strong>NodeJS</strong>,
-  <strong>NestJS</strong>, <strong>TypeScript</strong>,
-  <strong>Drizzle ORM</strong>, <strong>MySQL</strong>, and
-  <strong>PostgreSQL</strong>. Skilled in developing secure
-  <strong>REST APIs</strong>, responsive user interfaces,
-  <strong>JWT/RBAC authentication</strong>, validation schemas,
-  and multi-tenant architectures.
-</p>
-      <div class="hero-meta">
-        <a href="mailto:adhireddytilakavati@gmail.com" class="meta-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          adhireddytilakavati@gmail.com
-        </a>
-        <span class="meta-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          Hyderabad, India
-        </span>
-        <span class="meta-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-          +91 7386697499
-        </span>
-      </div>
-      <div class="hero-socials">
-        <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
-        </a>
-        <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125ZM6.964 20.452H3.71V9h3.254v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z"/></svg>
-        </a>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <div class="scroll-track"><div class="scroll-dot"></div></div>
-    </div>
-  </section>
-  <section class="section" id="skills">
-    <div class="container">
-      <p class="tag">What I Work With</p>
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-category reveal">
-          <h3 class="skill-label">Client-Side</h3>
-          <div class="skill-tags">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span><span>JWT Auth</span>Typescript<span>React.js</span><span>Redux</span><span>Tailwind CSS</span><span>Bootstrap 5</span>
-          </div>
+
+        <p class="tag">
+            Software QA Engineer
+        </p>
+
+        <h1>
+
+            Tilakavati
+
+            <br>
+
+            <span class="text-gradient">
+                Adhireddy
+            </span>
+
+        </h1>
+
+        <p class="hero-desc">
+
+            <strong>Software QA Engineer</strong>
+            with
+            <strong>2+ years of experience</strong>
+            designing, developing, and maintaining
+            scalable
+            <strong>automation frameworks</strong>
+            for enterprise web applications using
+            <strong>Playwright</strong>,
+            <strong>Selenium WebDriver</strong>,
+            <strong>TestNG</strong>,
+            <strong>JavaScript</strong>,
+            and
+            <strong>TypeScript</strong>.
+
+            Skilled in developing reusable
+            <strong>Page Object Model (POM)</strong>
+            components,
+            implementing
+            <strong>BDD with Cucumber</strong>,
+            <strong>TDD</strong>,
+            validating
+            <strong>REST APIs</strong>
+            using
+            <strong>Postman</strong>,
+            verifying backend data using
+            <strong>SQL</strong>,
+            integrating automation into
+            <strong>TeamCity CI/CD</strong>,
+            and collaborating with cross-functional
+            <strong>Agile</strong>
+            teams to deliver reliable,
+            high-quality software.
+
+        </p>
+
+        <div class="hero-meta">
+
+            <span class="meta-item">
+
+                📍 Hyderabad, Telangana
+
+            </span>
+
+            <span class="meta-item">
+
+                ✉ adhireddytilakavati@gmail.com
+
+            </span>
+
+            <span class="meta-item">
+
+                ☎ +91 7386697499
+
+            </span>
+
         </div>
-        <div class="skill-category reveal">
-          <h3 class="skill-label">Server-Side</h3>
-          <div class="skill-tags">
-            <span>Node.js</span><span>Express.js</span><span>NestJS</span><span>JWT Auth</span><span>REST APIs</span><span>MongoDB</span><span>MySQL</span><span>PostgreSQL</span>
-          </div>
+
+        <div class="hero-socials">
+
+            <a
+                href="https://github.com/tilak-c"
+                target="_blank"
+                class="social-btn">
+
+                GitHub
+
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/tilakavati-reddy-29t5/"
+                target="_blank"
+                class="social-btn">
+
+                LinkedIn
+
+            </a>
+
+            <a
+                href="Tilakavati_Tester_Resume.pdf"
+                class="social-btn"
+                download>
+
+                Resume
+
+            </a>
+
         </div>
-        <div class="skill-category reveal">
-          <h3 class="skill-label">Deploy & Cloud</h3>
-          <div class="skill-tags">
-            <span>Vercel</span><span>Render</span><span>Netlify</span><span>MongoDB Atlas</span>
-          </div>
-        </div>
-        <div class="skill-category reveal">
-          <h3 class="skill-label">Languages</h3>
-          <div class="skill-tags">
-            <span>Java</span><span>Python</span><span>C#</span><span>JavaScript</span>
-          </div>
-        </div>
-        <div class="skill-category reveal">
-          <h3 class="skill-label">Tools</h3>
-          <div class="skill-tags">
-            <span>Git</span><span>GitHub</span><span>Postman</span><span>VS Code</span><span>npm</span><span>Webpack</span><span>Vite</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- <section class="section" id="experience">
-  <div class="container">
-    <p class="tag">Where I've Worked</p>
-    <h2 class="section-title">Experience</h2>
 
-    <!-- EduNXT / TruScalar -->
-    <div class="card reveal">
-      <div class="card-header">
-        <div class="card-icon">🚀</div>
-
-        <div class="card-info">
-          <div class="card-top-row">
-            <h3>EduNXT (now TruScalar.ai)</h3>
-            <span class="card-date">Apr 2026 – Present</span>
-          </div>
-
-          <p class="card-role">Jr Software Developer</p>
-        </div>
-      </div>
-
-      <ul class="card-list">
-        <li>
-          <span class="bullet">▸</span>
-          Developed scalable mentoring and role-based management modules using
-          <strong>NestJS</strong> for a configurable multi-tenant platform
-          supporting <strong>20,000+ users</strong>.
-        </li>
-
-        <li>
-          <span class="bullet">▸</span>
-          Implemented secure <strong>RBAC access control</strong>,
-          tenant isolation, immutable records, and schema-based validations
-          using <strong>Zod</strong> and <strong>class-validator</strong>.
-        </li>
-
-        <li>
-          <span class="bullet">▸</span>
-          Built optimized repository and backend database workflows using
-          <strong>Drizzle ORM</strong>, <strong>MySQL</strong>,
-          and <strong>PostgreSQL</strong>.
-        </li>
-
-        <li>
-          <span class="bullet">▸</span>
-          Wrote comprehensive <strong>Vitest</strong> unit and edge-case test suites,
-          improving backend reliability and release stability.
-        </li>
-      </ul>
     </div>
 
-    <!-- S&P Global -->
-    <div class="card reveal">
-      <div class="card-header">
-        <div class="card-icon">💼</div>
-
-        <div class="card-info">
-          <div class="card-top-row">
-            <h3>S&P Global</h3>
-            <span class="card-date">Jun 2023 – Feb 2025</span>
-          </div>
-
-          <p class="card-role">Associate Engineer</p>
-        </div>
-      </div>
-
-      <ul class="card-list">
-        <li>
-          <span class="bullet">▸</span>
-          Improved sprint variance with robust testing, achieving a
-          <strong>110% increase in revenue</strong>.
-        </li>
-
-        <li>
-          <span class="bullet">▸</span>
-          Key role in on-prem-to-AWS migration for a platform used by
-          <strong>155+ banks</strong> and <strong>1550+ users</strong>.
-        </li>
-
-        <li>
-          <span class="bullet">▸</span>
-          Optimized test suites, achieving a
-          <strong>30% reduction</strong> in overall test run time.
-        </li>
-
-        <li>
-          <span class="bullet">▸</span>
-          Logged <strong>50+ bugs</strong> across 4 projects,
-          improving release quality.
-        </li>
-      </ul>
-    </div>
-  </div>
 </section>
-  <section class="section" id="projects">
+
+<!-- ===========================
+        ABOUT
+============================ -->
+
+<section
+    class="section"
+    id="about">
+
     <div class="container">
-      <p class="tag">What I've Built</p>
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <div class="card project-card reveal">
-          <div class="project-header">
-            <div>
-              <h3>PureBasket</h3>
-              <p class="project-sub">E-Commerce Application</p>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/tilak-c/PureBasket" target="_blank" aria-label="GitHub">🔗</a>
-              <a href="https://pure-basket-zeta.vercel.app/" target="_blank" aria-label="Live">🌐</a>
-            </div>
-          </div>
-          <p class="project-desc">Full-stack e-commerce app with user authentication, product listing, cart functionality, and order management.</p>
-          <div class="tech-tags"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span></div>
+
+        <p class="tag">
+
+            About Me
+
+        </p>
+
+        <h2 class="section-title">
+
+            Passionate About Quality Engineering
+
+        </h2>
+
+        <div class="card reveal">
+
+            <p class="project-desc">
+
+                I am a Software QA Engineer with professional experience
+                in automation and manual testing for enterprise web
+                applications.
+
+                My expertise includes building automation frameworks,
+                API validation, database testing,
+                regression testing,
+                functional testing,
+                and end-to-end testing using
+                Playwright,
+                Selenium,
+                TestNG,
+                JavaScript,
+                TypeScript,
+                Postman,
+                SQL,
+                TeamCity,
+                JIRA,
+                and Zephyr.
+
+            </p>
+
+            <p class="project-desc">
+
+                Alongside QA,
+                I enjoy building scalable full-stack applications using
+                React,
+                Node.js,
+                Express,
+                MongoDB,
+                and AI-powered technologies.
+
+                My long-term goal is to build impactful software products
+                that improve people's lives while maintaining engineering
+                excellence.
+
+            </p>
+
         </div>
-        <div class="card project-card reveal">
-          <div class="project-header">
-            <div>
-              <h3>RoomEase</h3>
-              <p class="project-sub">Hotel Booking Web App</p>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/tilak-c/RoomEase" target="_blank" aria-label="GitHub">🔗</a>
-              <a href="https://room-ease-e7iq.vercel.app/" target="_blank" aria-label="Live">🌐</a>
-            </div>
-          </div>
-          <p class="project-desc">Hotel booking system with secure auth, dynamic room listings, real-time availability, and reservation management.</p>
-          <div class="tech-tags"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span></div>
-        </div>
-        <div class="card project-card reveal">
-          <div class="project-header">
-            <div>
-              <h3>SerenAI</h3>
-              <p class="project-sub">AI Emotional Analytics</p>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/tilak-c/SerenAI" target="_blank" aria-label="GitHub">🔗</a>
-              <a href="https://seren-ai-vshy.vercel.app/" target="_blank" aria-label="Live">🌐</a>
-            </div>
-          </div>
-          <p class="project-desc">AI-driven mental wellness platform that detects emotional tone from chats and visualizes daily mood patterns.</p>
-          <div class="tech-tags"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Gemini AI</span></div>
-        </div>
-      </div>
+
     </div>
-  </section>
-  <section class="section" id="education">
-    <div class="container">
-      <p class="tag">Background</p>
-      <h2 class="section-title">Education & Achievements</h2>
-      <div class="edu-grid">
-        <div class="card edu-card reveal">
-          <div class="edu-icon">🎓</div>
-          <div>
-            <h3>B.E in Information Technology</h3>
-            <p class="edu-sub">Vasavi College of Engineering, Hyderabad</p>
-            <p class="card-date">Jun 2019 – Jun 2023</p>
-          </div>
+
+</section>
+
+<!-- ===========================
+        SKILLS
+============================ -->
+
+<section
+    class="section"
+    id="skills">
+
+<div class="container">
+
+<p class="tag">
+
+Technical Skills
+
+</p>
+
+<h2 class="section-title">
+
+My Tech Stack
+
+</h2>
+
+<div class="skills-grid">
+
+<!-- Continue in Part 2 -->
+
+        <!-- Testing -->
+
+        <div class="skill-category reveal">
+
+            <h3 class="skill-label">
+                Testing
+            </h3>
+
+            <div class="skill-tags">
+
+                <span>Manual Testing</span>
+                <span>Automation Testing</span>
+                <span>Functional Testing</span>
+                <span>Regression Testing</span>
+                <span>Integration Testing</span>
+                <span>API Testing</span>
+                <span>Database Testing</span>
+                <span>End-to-End Testing</span>
+                <span>Smoke Testing</span>
+                <span>Sanity Testing</span>
+                <span>Exploratory Testing</span>
+
+            </div>
+
         </div>
-        <div class="card edu-card reveal">
-          <div class="edu-icon">🏆</div>
-          <div>
-            <h3>Full Stack Web Development – AccioJob</h3>
-            <p class="edu-sub">Intensive MERN stack program covering REST APIs, scalable architecture, and production-grade apps.</p>
-          </div>
+
+        <!-- Automation -->
+
+        <div class="skill-category reveal">
+
+            <h3 class="skill-label">
+                Automation
+            </h3>
+
+            <div class="skill-tags">
+
+                <span>Playwright</span>
+                <span>Selenium WebDriver</span>
+                <span>TestNG</span>
+                <span>Cucumber</span>
+                <span>BDD</span>
+                <span>TDD</span>
+                <span>Page Object Model</span>
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+
+            </div>
+
         </div>
-        <div class="card edu-card reveal">
-          <div class="edu-icon">💻</div>
-          <div>
-            <h3>500+ DSA Problems Solved</h3>
-            <p class="edu-sub">Strong fundamentals in Data Structures & Algorithms across multiple coding platforms.</p>
-          </div>
+
+        <!-- API -->
+
+        <div class="skill-category reveal">
+
+            <h3 class="skill-label">
+                API & Database
+            </h3>
+
+            <div class="skill-tags">
+
+                <span>REST APIs</span>
+                <span>Postman</span>
+                <span>SQL</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+
+            </div>
+
         </div>
-      </div>
+
+        <!-- Tools -->
+
+        <div class="skill-category reveal">
+
+            <h3 class="skill-label">
+                Tools
+            </h3>
+
+            <div class="skill-tags">
+
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>JIRA</span>
+                <span>Zephyr</span>
+                <span>TeamCity</span>
+                <span>Docker</span>
+                <span>VS Code</span>
+
+            </div>
+
+        </div>
+
     </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
-      <p>Built with <span class="text-gradient">♥</span> by Tilakavati Adhireddy</p>
+
+</div>
+
+</section>
+
+<!-- ==========================
+        EXPERIENCE
+=========================== -->
+
+<section
+class="section"
+id="experience">
+
+<div class="container">
+
+<p class="tag">
+
+Experience
+
+</p>
+
+<h2 class="section-title">
+
+Professional Journey
+
+</h2>
+
+<!-- S&P -->
+
+<div class="card reveal">
+
+<div class="card-header">
+
+<div class="card-icon">
+
+💼
+
+</div>
+
+<div class="card-info">
+
+<div class="card-top-row">
+
+<h3>
+
+S&P Global
+
+</h3>
+
+<span class="card-date">
+
+Jun 2023 – Feb 2025
+
+</span>
+
+</div>
+
+<p class="card-role">
+
+Associate Engineer
+
+</p>
+
+</div>
+
+</div>
+
+<ul class="card-list">
+
+<li>
+
+<span class="bullet">▸</span>
+
+Reduced manual regression testing effort by
+<strong>35%</strong>
+by designing scalable automation frameworks
+using
+<strong>Playwright</strong>,
+<strong>Selenium WebDriver</strong>,
+<strong>TestNG</strong>,
+<strong>JavaScript</strong>,
+and
+<strong>TypeScript</strong>.
+
+</li>
+
+<li>
+
+<span class="bullet">▸</span>
+
+Improved automation framework maintainability by
+<strong>40%</strong>
+through reusable
+<strong>Page Object Model</strong>
+components,
+automation utilities,
+and modular test scripts.
+
+</li>
+
+<li>
+
+<span class="bullet">▸</span>
+
+Detected and resolved
+<strong>50+ critical defects</strong>
+before production by executing Functional,
+Regression,
+Integration,
+API,
+Database,
+Smoke,
+Sanity,
+and End-to-End testing.
+
+</li>
+
+<li>
+
+<span class="bullet">▸</span>
+
+Reduced release validation time by
+<strong>30%</strong>
+through
+<strong>TeamCity CI/CD</strong>
+automation and root cause analysis.
+
+</li>
+
+<li>
+
+<span class="bullet">▸</span>
+
+Managed
+<strong>100+ automated and manual test cases</strong>
+using
+<strong>JIRA</strong>
+and
+<strong>Zephyr</strong>.
+
+</li>
+
+<li>
+
+<span class="bullet">▸</span>
+
+Improved automation efficiency by
+<strong>40%</strong>
+through reusable automation libraries and Git-based
+collaboration.
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- EduNXT -->
+
+<div class="card reveal">
+
+<div class="card-header">
+
+<div class="card-icon">
+
+🚀
+
+</div>
+
+<div class="card-info">
+
+<div class="card-top-row">
+
+<h3>
+
+EduNXT (TruScalar.ai)
+
+</h3>
+
+<span class="card-date">
+
+Apr 2026 – Present
+
+</span>
+
+</div>
+
+<p class="card-role">
+
+Jr Software Developer
+
+</p>
+
+</div>
+
+</div>
+
+<ul class="card-list">
+
+<li>
+
+<span class="bullet">▸</span>
+
+Developed scalable mentoring modules using
+<strong>NestJS</strong>
+supporting
+<strong>20,000+</strong>
+users.
+
+</li>
+
+<li>
+
+<span class="bullet">▸</span>
+
+Implemented
+<strong>RBAC</strong>,
+tenant isolation,
+schema validation,
+and secure REST APIs.
+
+</li>
+
+<li>
+
+<span class="bullet">▸</span>
+
+Built backend repositories using
+<strong>Drizzle ORM</strong>,
+<strong>MySQL</strong>,
+and
+<strong>PostgreSQL</strong>.
+
+</li>
+
+<li>
+
+<span class="bullet">▸</span>
+
+Developed comprehensive
+<strong>Vitest</strong>
+unit tests improving backend reliability.
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+        PROJECTS
+=========================== -->
+
+<section
+class="section"
+id="projects">
+
+<div class="container">
+
+<p class="tag">
+
+Projects
+
+</p>
+
+<h2 class="section-title">
+
+Featured Projects
+
+</h2>
+
+<div class="projects-grid">
+
+<!-- PureBasket -->
+
+<div class="card reveal">
+
+<div class="project-header">
+
+<div>
+
+<h3>
+
+PureBasket
+
+</h3>
+
+<p class="project-sub">
+
+E-Commerce Platform
+
+</p>
+
+</div>
+
+<div class="project-links">
+
+<a
+href="https://github.com/tilak-c/PureBasket"
+target="_blank">
+
+GitHub
+
+</a>
+
+<a
+href="https://pure-basket-zeta.vercel.app/"
+target="_blank">
+
+Live
+
+</a>
+
+</div>
+
+</div>
+
+<p class="project-desc">
+
+Built a complete e-commerce platform with secure JWT
+authentication,
+shopping cart,
+product management,
+and REST APIs.
+
+</p>
+
+<div class="tech-tags">
+
+<span>React</span>
+
+<span>Node.js</span>
+
+<span>Express</span>
+
+<span>MongoDB</span>
+
+</div>
+
+</div>
+
+<!-- Continue in Part 3 -->
+ <!-- ==========================
+        RoomEase
+=========================== -->
+
+<div class="card reveal">
+
+    <div class="project-header">
+
+        <div>
+
+            <h3>
+                RoomEase
+            </h3>
+
+            <p class="project-sub">
+                Hotel Booking Platform
+            </p>
+
+        </div>
+
+        <div class="project-links">
+
+            <a
+                href="https://github.com/tilak-c/RoomEase"
+                target="_blank">
+
+                GitHub
+
+            </a>
+
+            <a
+                href="https://room-ease-e7iq.vercel.app/"
+                target="_blank">
+
+                Live
+
+            </a>
+
+        </div>
+
     </div>
-  </footer>
-  <script src="script.js"></script>
+
+    <p class="project-desc">
+
+        Developed a full-stack hotel booking platform with secure JWT authentication,
+        real-time room availability, booking management, and RESTful APIs for users
+        and administrators.
+
+    </p>
+
+    <div class="tech-tags">
+
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Express</span>
+        <span>MongoDB</span>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+        SerenAI
+=========================== -->
+
+<div class="card reveal">
+
+    <div class="project-header">
+
+        <div>
+
+            <h3>
+                SerenAI
+            </h3>
+
+            <p class="project-sub">
+                AI Emotional Analytics Platform
+            </p>
+
+        </div>
+
+        <div class="project-links">
+
+            <a
+                href="https://github.com/tilak-c/SerenAI"
+                target="_blank">
+
+                GitHub
+
+            </a>
+
+            <a
+                href="https://seren-ai-vshy.vercel.app/"
+                target="_blank">
+
+                Live
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <p class="project-desc">
+
+        AI-powered emotional wellness platform that analyzes journal entries and user
+        conversations to identify emotions, generate AI-assisted reflections, and
+        visualize mood trends using Gemini AI.
+
+    </p>
+
+    <div class="tech-tags">
+
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Express</span>
+        <span>MongoDB</span>
+        <span>Gemini AI</span>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+        EDUCATION
+=========================== -->
+
+<section
+class="section"
+id="education">
+
+<div class="container">
+
+<p class="tag">
+
+Education
+
+</p>
+
+<h2 class="section-title">
+
+Education & Achievements
+
+</h2>
+
+<div class="edu-grid">
+
+<div class="card edu-card reveal">
+
+<div class="edu-icon">
+
+🎓
+
+</div>
+
+<div>
+
+<h3>
+
+Bachelor of Engineering
+
+</h3>
+
+<p class="edu-sub">
+
+Information Technology
+
+</p>
+
+<p class="edu-sub">
+
+Vasavi College of Engineering
+
+</p>
+
+<p class="card-date">
+
+2019 – 2023
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card edu-card reveal">
+
+<div class="edu-icon">
+
+🏆
+
+</div>
+
+<div>
+
+<h3>
+
+Achievements
+
+</h3>
+
+<p class="edu-sub">
+
+✔ Solved 500+ Data Structures & Algorithms problems
+
+</p>
+
+<p class="edu-sub">
+
+✔ Built multiple full-stack web applications
+
+</p>
+
+<p class="edu-sub">
+
+✔ Developed enterprise automation frameworks
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+        CONTACT
+=========================== -->
+
+<section
+class="section"
+id="contact">
+
+<div class="container">
+
+<p class="tag">
+
+Let's Connect
+
+</p>
+
+<h2 class="section-title">
+
+Interested in Working Together?
+
+</h2>
+
+<div class="card reveal">
+
+<p class="project-desc">
+
+I'm actively seeking Software QA Engineer, Automation Test Engineer,
+SDET, and Full Stack Developer opportunities.
+Feel free to reach out if you'd like to discuss opportunities,
+collaborations, or innovative software projects.
+
+</p>
+
+<div class="hero-socials">
+
+<a
+href="mailto:adhireddytilakavati@gmail.com"
+class="social-btn">
+
+Email
+
+</a>
+
+<a
+href="https://github.com/tilak-c"
+target="_blank"
+class="social-btn">
+
+GitHub
+
+</a>
+
+<a
+href="https://www.linkedin.com/in/tilakavati-reddy-29t5/"
+target="_blank"
+class="social-btn">
+
+LinkedIn
+
+</a>
+
+<a
+href="Tilakavati_Tester_Resume.pdf"
+download
+class="social-btn">
+
+Resume
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+        FOOTER
+=========================== -->
+
+<footer class="footer">
+
+<div class="container">
+
+<p>
+
+Built with
+<span class="text-gradient">
+
+♥
+
+</span>
+
+by
+<strong>
+
+Tilakavati Adhireddy
+
+</strong>
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
